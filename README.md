@@ -20,6 +20,7 @@ git clone https://github.com/Davanso/gym-set.git
 cd gym-set
 npm install
 npm start
+```
 
 | Type     | Emoji                 | code                    |
 |:---------|:----------------------|:------------------------|
@@ -33,4 +34,3 @@ npm start
 | build    | :package:             | `:package:`             |
 | ci       | :construction_worker: | `:construction_worker:` |
 | chore    | :wrench:              | `:wrench:`              |
-```
