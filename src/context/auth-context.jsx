@@ -6,11 +6,6 @@ import PropTypes from "prop-types";
 // Contexto que armazena os dados do usuario e escuta por mudancas de login/logout
 const AuthContext = createContext();
 
-// Definir os tipos esperados das props
-AuthProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 // Componente que encapsula os componentes filhos e armazena os dados do usuario
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -33,6 +28,11 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
+};
+
+// Definir os tipos esperados das props
+AuthProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default AuthContext;

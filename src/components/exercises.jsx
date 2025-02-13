@@ -33,6 +33,7 @@ const Exercises = () => {
     return () => unsubscribe();
   }, []);
 
+  // Delete
   const handleDelete = async (id) => {
     try {
       await deleteDoc(doc(db, "exercises", id));
@@ -41,6 +42,7 @@ const Exercises = () => {
     }
   };
 
+  // Edit
   const handleEdit = (ex) => {
     setEditId(ex.id);
     setEditExercise(ex.exercise);
@@ -48,6 +50,7 @@ const Exercises = () => {
     setEditWeight(ex.weight);
   };
 
+  // Update
   const handleUpdate = async () => {
     try {
       await updateDoc(doc(db, "exercises", editId), {
