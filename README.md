@@ -1,8 +1,36 @@
-# React + Vite
+# 🏋️ gym-set
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple app to track your personal records at the gym.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Log exercises with weight, reps, and date
+- Track progress over time
+- Simple and user-friendly interface
+
+## 🛠️ Tech Stack
+
+- React (Frontend)
+- Firebase (Backend & Authentication)
+
+## 📦 How to run the project
+
+```bash
+git clone https://github.com/Davanso/gym-set.git
+cd gym-set
+npm install
+npm start
+
+| Type     | Emoji                 | code                    |
+|:---------|:----------------------|:------------------------|
+| feat     | :sparkles:            | `:sparkles:`            |
+| fix      | :bug:                 | `:bug:`                 |
+| docs     | :books:               | `:books:`               |
+| style    | :gem:                 | `:gem:`                 |
+| refactor | :hammer:              | `:hammer:`              |
+| perf     | :rocket:              | `:rocket:`              |
+| test     | :rotating_light:      | `:rotating_light:`      |
+| build    | :package:             | `:package:`             |
+| ci       | :construction_worker: | `:construction_worker:` |
+| chore    | :wrench:              | `:wrench:`              |
+```
