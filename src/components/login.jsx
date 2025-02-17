@@ -34,40 +34,44 @@ const Login = () => {
     <div className="login-container">
       <h1>Gym Set</h1>
       <div className="login-box">
-        {/* Inputs de Email e Senha */}
-        <div className="login-input">
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
+  {/* Inputs de Email e Senha */}
+  <div className="login-input">
+    <input
+      type="email"
+      placeholder="Email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
+    <input
+      type="password"
+      placeholder="Senha"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+    />
+  </div>
 
-        {/* Botões de Login */}
-        <div className="button-container">
-          <button className="login-button" onClick={handleEmailLogin}>
-            Entrar
-          </button>
-          <button className="login-button" onClick={handleGoogleLogin}>
-            <FaGoogle />
-          </button>
-          <button
-            className="login-button"
-            onClick={() => {
-              console.log("Login com Apple - ainda não implementado");
-            }}
-          >
-            <FaApple />
-          </button>
-        </div>
-      </div>
+  {/* Botão "Entrar" Centralizado */}
+  <div className="login-main-button">
+    <button className="login-button" onClick={handleEmailLogin}>
+      Entrar
+    </button>
+  </div>
+
+  {/* Botões de Login Social */}
+  <div className="button-container">
+    <button className="login-button" onClick={handleGoogleLogin}>
+      <FaGoogle />
+    </button>
+    <button
+      className="login-button"
+      onClick={() => {
+        console.log("Login com Apple - ainda não implementado");
+      }}
+    >
+      <FaApple />
+    </button>
+  </div>
+</div>
     </div>
   );
 };
