@@ -113,7 +113,8 @@ body {
 }
 
 .forgot-password:hover {
-  color: #46f3ff;
+  color: #f8f8f8;
+  background-color: black;
 }
 
 /* Botões sociais */
